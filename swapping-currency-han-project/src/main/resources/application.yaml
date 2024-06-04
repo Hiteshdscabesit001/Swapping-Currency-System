@@ -1,0 +1,31 @@
+# Application name
+spring:
+  application:
+    name: SWAPPING-CURRENCY
+
+# Database configuration
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/swappingcurrency?createDatabaseIfNotExist=true
+    username: admin
+    password: Mobiloitte@1
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  # Email configuration
+  mail:
+    host: smtp.gmail.com
+    username: karankssingh1999@gmail.com
+    password: qlofygnusevxijgu
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
